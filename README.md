@@ -44,12 +44,19 @@ Include the stylesheet:
   Use [Vue.js transitions](http://vuejs.org/guide/transitions.html "Vue.js Transitions") as you normally would, but for the transition name you will use one of [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") **removing** the ***In/Out*** from the name.
 
   For example, if I want to use *fadeInLeft* and *fadeOutLeft* on my element, I'll write:
-  ```html
-  <div v-if="show" transition="fadeLeft">hello</div>
-  ```
+```html
+<transition-group name="fadeLeft" tag="ul" class="list-group">
+    <li v-for="item in items" v-bind:key="item" class="list-group-item">
+        {{ item }}
+    </li>
+</transition-group>
+```
   enter/leave is already written in the stylesheet, so just remove *In/Out* from the name and you're golden.
 
 ####Custom Transition Classes
+
+> The below is old documentation, please see Vue 2.0 doc: https://vuejs.org/guide/transitions.html
+
   As of 0.0.3, Animate.css's original classnames are supported on enter/leave transitions. So if you're going to use [Custom Transition Classes](http://vuejs.org/guide/transitions.html#Custom-Transition-Classes "Custom Transition Classes"), you can either add *-enter/-leave* to the classes:
 
   ```js
