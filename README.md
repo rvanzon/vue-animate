@@ -1,4 +1,4 @@
-# vue-animate for Vue 2.0
+# vue2-animate for Vue.js 2.0
 
 *Cross-browser CSS3 animation library*
 
@@ -15,7 +15,7 @@ Include the stylesheet:
 
   ```html
   <head>
-    <link rel="stylesheet" href="vue-animate.min.css">
+    <link rel="stylesheet" href="vue2-animate.min.css">
   </head>
   ```
 ####npm
@@ -24,17 +24,17 @@ Include the stylesheet:
   npm install --save vue2-animate
   ```
   ```js
-  require('vue-animate/dist/vue-animate.min.css')
+  require('vue2-animate/dist/vue2-animate.min.css')
   ```
 ####Less
   ```less
-  @import "<PATH_TO_SOURCE>/src/vue-animate.less";
+  @import "<PATH_TO_SOURCE>/src/vue2-animate.less";
   ```
 
 ####Building
   ```shell
   git clone https://github.com/asika32764/vue2-animate.git
-  cd vue-animate
+  cd vue2-animate
   npm install
   npm run build #Compiled .css files go to the dist folder
   ```
@@ -79,7 +79,7 @@ Animate.css's original classnames are supported on enter/leave transitions. So i
 ```
 
 ####Supported Animations
-  Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue-animate (aka - *what you can put in the transition="x"* attribute) as of right now:
+  Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue2-animate (aka - *what you can put in the transition="x"* attribute) as of right now:
 
 #####Bounce
   * `bounce`
