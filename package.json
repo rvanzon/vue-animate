@@ -1,19 +1,19 @@
 {
-  "name": "vue-animate",
-  "version": "0.0.4",
-  "description": "LESS cross-browser animation library, for use with Vue.js. Ported from Animate.css.",
+  "name": "vue2-animate",
+  "version": "1.0",
+  "description": "LESS cross-browser animation library, for use with Vue.js 2.0. Ported from Animate.css.",
   "author": {
-    "name": "Hayden Bickerton",
-    "email": "haydenbbickerton@gmail.com"
+    "name": "Simon Asika",
+    "email": "asika32764@gmail.com"
   },
-  "homepage": "https://github.com/haydenbbickerton/vue-animate",
+  "homepage": "https://github.com/asika32764/vue2-animate",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haydenbbickerton/vue-animate.git"
+    "url": "git+https://github.com/asika32764/vue2-animate.git"
   },
   "bugs": {
-    "url": "https://github.com/haydenbbickerton/vue-animate/issues"
+    "url": "https://github.com/asika32764/vue2-animate/issues"
   },
   "keywords": [
     "less",
@@ -36,6 +36,7 @@
     "less-plugin-clean-css": "^1.5.0"
   },
   "scripts": {
-    "build": "lessc --autoprefix='> 5%' src/vue-animate.less > dist/vue-animate.css && lessc --autoprefix='> 5%' --clean-css='--compatibility=ie8 --advanced' src/vue-animate.less > dist/vue-animate.min.css"
+    "build": "lessc src/vue-animate.less > dist/vue-animate.css",
+    "minify": "lessc --clean-css='--compatibility=ie8 --advanced' src/vue-animate.less > dist/vue-animate.min.css"
   }
 }

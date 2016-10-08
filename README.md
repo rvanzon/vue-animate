@@ -1,4 +1,5 @@
-#vue-animate
+# vue-animate for Vue 2.0
+
 *Cross-browser CSS3 animation library*
 
 [![Version](https://img.shields.io/npm/v/vue-animate.svg?style=flat-square)](https://www.npmjs.com/package/vue-animate)
@@ -6,7 +7,7 @@
 
 A [Vue.js](http://vuejs.org/ "Vue.js") port of [Animate.css](https://github.com/daneden/animate.css "Animate.css"). For use with Vue's built-in transitions.
 
- - **[DEMO](http://luoye.pw/vue-animate-demo/)** (courtesy of [luoye-fe](https://github.com/luoye-fe))
+**This is modified version of: https://github.com/haydenbbickerton/vue-animate for Vue 2.0**
 
 ##Installation
 ####HTML
