@@ -21,7 +21,7 @@ Include the stylesheet:
 ####npm
   If you're on webpack and using the [css-loader](https://github.com/webpack/css-loader "css loader"), you can use something like this:
   ```shell
-  npm install --save vue-animate
+  npm install --save vue2-animate
   ```
   ```js
   require('vue-animate/dist/vue-animate.min.css')
@@ -33,7 +33,7 @@ Include the stylesheet:
 
 ####Building
   ```shell
-  git clone https://github.com/haydenbbickerton/vue-animate.git
+  git clone https://github.com/asika32764/vue2-animate.git
   cd vue-animate
   npm install
   npm run build #Compiled .css files go to the dist folder
