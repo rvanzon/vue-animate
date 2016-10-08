@@ -55,24 +55,28 @@ Include the stylesheet:
 
 ####Custom Transition Classes
 
-> The below is old documentation, please see Vue 2.0 doc: https://vuejs.org/guide/transitions.html
+Animate.css's original classnames are supported on enter/leave transitions. So if you're going to use [Custom Transition Classes](http://vuejs.org/guide/transitions.html#Custom-Transition-Classes "Custom Transition Classes"), you can either add *-enter/-leave* to the classes:
 
-  As of 0.0.3, Animate.css's original classnames are supported on enter/leave transitions. So if you're going to use [Custom Transition Classes](http://vuejs.org/guide/transitions.html#Custom-Transition-Classes "Custom Transition Classes"), you can either add *-enter/-leave* to the classes:
-
-  ```js
-  Vue.transition('bounce', {
-    enterClass: 'bounceLeft-enter',
-    leaveClass: 'bounceRight-leave'
-  })
-  ```
+```html
+<transition
+  name="custom-classes-transition"
+  enter-active-class="bounceLeft-enter"
+  leave-active-class="bounceRight-leave"
+>
+  <p v-if="show">hello</p>
+</transition>
+```
   Or use the regular *In/Out* syntax:
-
-  ```js
-  Vue.transition('bounce', {
-    enterClass: 'bounceInLeft',
-    leaveClass: 'bounceOutRight'
-  })
-  ```
+  
+```html
+<transition
+  name="bounce"
+  enter-active-class="bounceInLeft"
+  leave-active-class="bounceOutRight"
+>
+  <p v-if="show">hello</p>
+</transition>
+```
 
 ####Supported Animations
   Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue-animate (aka - *what you can put in the transition="x"* attribute) as of right now:
