@@ -45,8 +45,8 @@ Include the stylesheet:
 
   For example, if I want to use *fadeInLeft* and *fadeOutLeft* on my element, I'll write:
 ```html
-<transition-group name="fadeLeft" tag="ul" class="list-group">
-    <li v-for="item in items" v-bind:key="item" class="list-group-item">
+<transition-group name="fadeLeft" tag="ul">
+    <li v-for="item in items" v-bind:key="item">
         {{ item }}
     </li>
 </transition-group>
