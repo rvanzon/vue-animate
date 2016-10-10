@@ -1,6 +1,6 @@
 {
   "name": "vue2-animate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "LESS cross-browser animation library, for use with Vue.js 2.0. Ported from Animate.css.",
   "author": {
     "name": "Simon Asika",
@@ -36,7 +36,8 @@
     "less-plugin-clean-css": "^1.5.0"
   },
   "scripts": {
-    "build": "lessc src/vue2-animate.less > dist/vue2-animate.css",
+    "build": "lessc src/vue2-animate.less > dist/vue2-animate.css && lessc --clean-css='--compatibility=ie8 --advanced' src/vue2-animate.less > dist/vue2-animate.min.css",
+    "less": "lessc src/vue2-animate.less > dist/vue2-animate.css",
     "minify": "lessc --clean-css='--compatibility=ie8 --advanced' src/vue2-animate.less > dist/vue2-animate.min.css"
   }
 }

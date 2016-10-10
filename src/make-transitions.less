@@ -11,6 +11,12 @@
     //    animation-fill-mode: both;
     //}
 
+    .@{base}-enter-active, .@{base}In,
+    .@{base}-leave-active, .@{base}Out {
+        animation-duration: @animationDuration;
+        animation-fill-mode: both;
+    }
+
     // Entrance/Exit for the base class
     .@{base}-enter-active, .@{base}In {
         animation-name: ~'@{base}In';
