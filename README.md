@@ -9,8 +9,8 @@ A [Vue.js](http://vuejs.org/ "Vue.js") port of [Animate.css](https://github.com/
 
 **This is modified version of: https://github.com/haydenbbickerton/vue-animate for Vue 2.0**
 
-##Installation
-####HTML
+## Installation
+#### HTML
 Include the stylesheet:
 
   ```html
@@ -18,7 +18,7 @@ Include the stylesheet:
     <link rel="stylesheet" href="vue2-animate.min.css">
   </head>
   ```
-####npm
+#### npm
   If you're on webpack and using the [css-loader](https://github.com/webpack/css-loader "css loader"), you can use something like this:
   ```shell
   npm install --save vue2-animate
@@ -26,12 +26,12 @@ Include the stylesheet:
   ```js
   require('vue2-animate/dist/vue2-animate.min.css')
   ```
-####Less
+#### Less
   ```less
   @import "<PATH_TO_SOURCE>/src/vue2-animate.less";
   ```
 
-####Building
+#### Building
   ```shell
   git clone https://github.com/asika32764/vue2-animate.git
   cd vue2-animate
@@ -39,7 +39,7 @@ Include the stylesheet:
   npm run build #Compiled .css files go to the dist folder
   ```
 
-##Usage
+## Usage
 
   Use [Vue.js transitions](http://vuejs.org/guide/transitions.html "Vue.js Transitions") as you normally would, but for the transition name you will use one of [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") **removing** the ***In/Out*** from the name.
 
@@ -53,7 +53,7 @@ Include the stylesheet:
 ```
   enter/leave is already written in the stylesheet, so just remove *In/Out* from the name and you're golden.
 
-####Custom Transition Classes
+#### Custom Transition Classes
 
 Animate.css's original classnames are supported on enter/leave transitions. So if you're going to use [Custom Transition Classes](http://vuejs.org/guide/transitions.html#Custom-Transition-Classes "Custom Transition Classes"), you can either add *-enter/-leave* to the classes:
 
@@ -78,17 +78,17 @@ Animate.css's original classnames are supported on enter/leave transitions. So i
 </transition>
 ```
 
-####Supported Animations
+#### Supported Animations
   Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue2-animate (aka - *what you can put in the transition="x"* attribute) as of right now:
 
-#####Bounce
+##### Bounce
   * `bounce`
   * `bounceDown`
   * `bounceLeft`
   * `bounceRight`
   * `bounceUp`
 
-#####Fade
+##### Fade
   * `fade`
   * `fadeDown`
   * `fadeDownBig`
@@ -99,20 +99,20 @@ Animate.css's original classnames are supported on enter/leave transitions. So i
   * `fadeUp`
   * `fadeUpBig`
 
-#####Rotate
+##### Rotate
   * `rotate`
   * `rotateDownLeft`
   * `rotateDownRight`
   * `rotateUpLeft`
   * `rotateUpRight`
 
-#####Slide
+##### Slide
   * `slideDown`
   * `slideLeft`
   * `slideRight`
   * `slideUp`
 
-#####Zoom
+##### Zoom
   * `zoom`
   * `zoomDown`
   * `zoomLeft`
